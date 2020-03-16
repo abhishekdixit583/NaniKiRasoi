@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-xs-10">
+    <app-shoping-list-edit
+    (ingredentAdded)= "onIngredentAddedd($event)"></app-shoping-list-edit>
+    <a href="#" class="list-group-item clearfix" *ngFor="let ingredent of ingredents">
+      <div class="float-left">
+        <h5 class="list-group-item-heading ">{{ ingredent.inname }} ({{ingredent.amount}})</h5>
+      </div>
+    </a>
+  </div>
+</div>
